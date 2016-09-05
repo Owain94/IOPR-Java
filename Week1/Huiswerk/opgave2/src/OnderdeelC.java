@@ -24,7 +24,7 @@ public class OnderdeelC {
         if (bmi < 18.5) {
             return "ondergewicht";
         } else if (bmi < 25) {
-            return "eem normaal gewicht";
+            return "een normaal gewicht";
         } else if (bmi < 27) {
             return "lichtelijk overgewicht";
         } else if (bmi < 30) {
