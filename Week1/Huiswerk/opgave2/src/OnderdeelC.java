@@ -23,13 +23,13 @@ public class OnderdeelC {
     private static String BmiToReadable(double bmi) {
         if (bmi < 18.5) {
             return "ondergewicht";
-        } else if (bmi <= 25) {
+        } else if (bmi < 25) {
             return "eem normaal gewicht";
-        } else if (bmi <= 27) {
+        } else if (bmi < 27) {
             return "lichtelijk overgewicht";
-        } else if (bmi <= 30) {
+        } else if (bmi < 30) {
             return "een tijdje vies en vet gegeten";
-        } else if (bmi <= 40) {
+        } else if (bmi < 40) {
             return "lang vies en vet gegeten";
         }
         return "een eeuwigheid vies en vet gegeten";
