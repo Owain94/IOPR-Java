@@ -7,16 +7,16 @@ public class CharConvert {
         System.out.println("Vul een letter in:");
         String charToConvert = input.nextLine();
 
-        String consonants = "";
+        String consonant = "";
 
         // We needed to use a switch otherwise i wouldn't have done this this ugly...
-        if (charToConvert.matches("[^aeiouAEIOU]+") && charToConvert.length() == 1) {
-            consonants = "y";
-        } else if (charToConvert.length() == 1) {
-            consonants = "n";
+        if (charToConvert.length() == 1 && Character.isAlphabetic(charToConvert.charAt(0)) &&  charToConvert.toLowerCase().matches("[^aeiouAEIOU]+")) {
+            consonant = "y";
+        } else if (charToConvert.length() == 1 && Character.isAlphabetic(charToConvert.charAt(0)) ) {
+            consonant = "n";
         }
 
-        switch (consonants) {
+        switch (consonant) {
             case "y":
                 System.out.println(String.format("Kleine letter: %s\n" +
                         "Hoofdletter: %s\n" +
@@ -28,7 +28,7 @@ public class CharConvert {
             case "n":
                 System.out.println(String.format("Kleine letter: %s\n" +
                                 "Hoofdletter: %s\n" +
-                                "Dit is een medeklinker",
+                                "Dit is een klinker",
                         charToConvert.toLowerCase(),
                         charToConvert.toUpperCase()
                 ));
