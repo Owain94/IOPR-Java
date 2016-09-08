@@ -11,12 +11,14 @@ public class Calculate {
         System.out.print("Wat is uw leeftijd?\n");
         int age = input.nextInt();
 
-        System.out.println(String.format("Deze rit kost: €%.2f",
-                age < 12 ?
-                        distance * price * 0.5 :
-                        age < 65 ?
-                                distance * price :
-                                distance * price * 0.75
-        ));
+        System.out.println(
+                String.format(
+                        "Deze rit kost: €%.2f",
+                        age < 12 ?
+                                distance * price * 0.5 :
+                                age < 65 ?
+                                        distance * price :
+                                        distance * price * 0.75
+                ));
     }
 }

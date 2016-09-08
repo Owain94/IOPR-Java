@@ -15,6 +15,10 @@ public class OnderdeelB {
         int sum = 0;
         for (int number : numbers) sum += number;
 
-        System.out.println(String.format("Average value of array elements is: %d", sum / numbers.size()));
+        System.out.println(
+                String.format(
+                        "Average value of array elements is: %d",
+                        sum / numbers.size()
+                ));
     }
 }

@@ -9,7 +9,10 @@ public class OnderdeelA {
         System.out.print("\nWat is de hoogte van de cilinder?\n");
         double hoogte = input.nextDouble();
 
-        System.out.println(String.format("De inhoud van de cilinder is: %.2f",
-                (diameter / 2) * (diameter / 2) * Math.PI * hoogte));
+        System.out.println(
+                String.format(
+                        "De inhoud van de cilinder is: %.2f",
+                        (diameter / 2) * (diameter / 2) * Math.PI * hoogte
+                ));
     }
 }

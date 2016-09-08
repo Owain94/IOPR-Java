@@ -18,16 +18,18 @@ public class QuadraticEquation {
         if (isNegative(discriminant)) {
             System.out.println("Geen oplossing mogelijk");
         } else if (BigDecimal.ZERO.compareTo(new BigDecimal(discriminant)) == 0) {
-            System.out.println(String.format(
-                    "Deze vergelijking heeft 1 oplossing, namelijk: x = %s",
-                    (-secondDouble + Math.sqrt(discriminant)) / (2 * firstDouble)
-            ));
+            System.out.println(
+                    String.format(
+                            "Deze vergelijking heeft 1 oplossing, namelijk: x = %s",
+                            (-secondDouble + Math.sqrt(discriminant)) / (2 * firstDouble)
+                    ));
         } else {
-            System.out.println(String.format(
-                    "Deze vergelijking heeft 2 oplossingen, namelijk: x1 = %s en x2 = %s",
-                    (-secondDouble + Math.sqrt(discriminant)) / (2 * firstDouble),
-                    (-secondDouble - Math.sqrt(discriminant)) / (2 * firstDouble)
-            ));
+            System.out.println(
+                    String.format(
+                            "Deze vergelijking heeft 2 oplossingen, namelijk: x1 = %s en x2 = %s",
+                            (-secondDouble + Math.sqrt(discriminant)) / (2 * firstDouble),
+                            (-secondDouble - Math.sqrt(discriminant)) / (2 * firstDouble)
+                    ));
         }
     }
 

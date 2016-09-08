@@ -15,38 +15,39 @@ public class Modulo {
         System.out.print("2e kleinere getal:\n");
         int smallNumberTwo = input.nextInt();
 
-        if (bigNumber % smallNumberOne == 0 && bigNumber % smallNumberTwo == 0)
-        {
-            System.out.println(String.format("%s is deelbaar door %s en %s",
-                    bigNumber,
-                    smallNumberOne,
-                    smallNumberTwo
-            ));
-        }
-        else if (bigNumber % smallNumberOne == 0 && bigNumber % smallNumberTwo != 0)
-        {
-            System.out.println(String.format("%s is deelbaar door %s en niet door %s",
-                    bigNumber,
-                    smallNumberOne,
-                    smallNumberTwo
-            ));
+        if (bigNumber % smallNumberOne == 0 && bigNumber % smallNumberTwo == 0) {
+            System.out.println(
+                    String.format(
+                            "%s is deelbaar door %s en %s",
+                            bigNumber,
+                            smallNumberOne,
+                            smallNumberTwo
+                    ));
+        } else if (bigNumber % smallNumberOne == 0 && bigNumber % smallNumberTwo != 0) {
+            System.out.println(
+                    String.format(
+                            "%s is deelbaar door %s en niet door %s",
+                            bigNumber,
+                            smallNumberOne,
+                            smallNumberTwo
+                    ));
 
-        }
-        else if (bigNumber % smallNumberOne != 0 && bigNumber % smallNumberTwo == 0)
-        {
-            System.out.println(String.format("%s is deelbaar door %s en niet door %s",
-                    bigNumber,
-                    smallNumberTwo,
-                    smallNumberOne
-            ));
-        }
-        else
-        {
-            System.out.println(String.format("%s is niet deelbaar door %s en %s",
-                    bigNumber,
-                    smallNumberOne,
-                    smallNumberTwo
-            ));
+        } else if (bigNumber % smallNumberOne != 0 && bigNumber % smallNumberTwo == 0) {
+            System.out.println(
+                    String.format(
+                            "%s is deelbaar door %s en niet door %s",
+                            bigNumber,
+                            smallNumberTwo,
+                            smallNumberOne
+                    ));
+        } else {
+            System.out.println(
+                    String.format(
+                            "%s is niet deelbaar door %s en %s",
+                            bigNumber,
+                            smallNumberOne,
+                            smallNumberTwo
+                    ));
         }
     }
 }

@@ -9,11 +9,13 @@ public class OnderdeelC {
         System.out.print("Voer je lengte in in meters:\n");
         double length = scanner.nextDouble();
 
-        System.out.print(String.format("U hebt een bmi van: %.2f\n" +
-                        "Dit betekend dat u %s hebt",
-                calculateBMI(weight, length),
-                BmiToReadable(calculateBMI(weight, length))
-        ));
+        System.out.print(
+                String.format(
+                        "U hebt een bmi van: %.2f\n" +
+                                "Dit betekend dat u %s hebt",
+                        calculateBMI(weight, length),
+                        BmiToReadable(calculateBMI(weight, length))
+                ));
     }
 
     private static double calculateBMI(double weight, double lenght) {

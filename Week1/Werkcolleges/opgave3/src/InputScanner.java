@@ -5,6 +5,10 @@ public class InputScanner {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Wat is je naam?\n");
-        System.out.println(String.format("Welkom %s!", scanner.nextLine()));
+        System.out.println(
+                String.format(
+                        "Welkom %s!",
+                        scanner.nextLine()
+                ));
     }
 }

@@ -18,18 +18,20 @@ public class TimeConvert {
         long second = TimeUnit.SECONDS.toSeconds((seconds - (years * (365 * 24 * 60 * 60)))) -
                 TimeUnit.MINUTES.toSeconds(TimeUnit.SECONDS.toMinutes((seconds - (years * (365 * 24 * 60 * 60)))));
 
-        System.out.print(String.format("%s seconden is:\n\n" +
-                        "%s jaar / jaren\n" +
-                        "%s dag / dagen\n" +
-                        "%s uur / uren\n" +
-                        "%s minuut / minuten\n" +
-                        "%s seconde / seconden",
-                seconds,
-                years,
-                days,
-                hours,
-                minute,
-                second
-        ));
+        System.out.print(
+                String.format(
+                        "%s seconden is:\n\n" +
+                                "%s jaar / jaren\n" +
+                                "%s dag / dagen\n" +
+                                "%s uur / uren\n" +
+                                "%s minuut / minuten\n" +
+                                "%s seconde / seconden",
+                        seconds,
+                        years,
+                        days,
+                        hours,
+                        minute,
+                        second
+                ));
     }
 }
